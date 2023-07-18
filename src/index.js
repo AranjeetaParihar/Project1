@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+var records = [{fname: "myfname", lname: "mylname", contact: "1234567890"}];
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App records={records}/>
   </React.StrictMode>
 );
 
